@@ -1,0 +1,8 @@
+<!--Components/dropSelectList/dropSelectList.wxml-->
+<view class="selectedTextBox" bindtap="showList">
+    <text class="selectedText">{{selectArray[index]}}</text>
+    <image class="downArrow{{ifShow ? 'Rotate' : ''}}" src="../../statics/photos/arrowDown.png"/>
+</view>
+<view class="selectList" style="height: {{ifShow ? '400rpx' : '0'}};">
+    <text class="selectListItem" wx:for="{{selectArray}}" wx:key="*this" data-index="{{index}}" bindtap="tapOnListItem">{{item}}</text>
+</view>

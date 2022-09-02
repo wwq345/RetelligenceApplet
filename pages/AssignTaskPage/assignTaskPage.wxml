@@ -2,17 +2,13 @@
 <view class="assignTaskPage">
   <text class="title">执行标准</text>
   <view class="standard">
-    
+    <picker mode="multiSelector" bindchange="bindChange" bindcolumnchange="bindColumnChange" value="{{standardIndex}}" range="{{standardArray}}">
+    <text class="standardText">{{standardArray[0][standardIndex[0]]}} / {{standardArray[1][standardIndex[1]]}} / {{standardArray[2][standardIndex[2]]}}</text>
+    </picker>
   </view>
   <text class="title">员工</text>
   <view class="asignee">
-    <view class="selectedTextBox" catchtap="showList">
-      <text class="selectedText">{{selectArray[index]}}</text>
-      <image class="downArrow" src="../../statics/photos/arrowDown.png"/>
-    </view>
-    <view class="selectList" style="height: {{ifShow ? '400rpx' : '0'}};">
-      <text class="selectListItem" wx:for="{{selectArray}}" wx:key="*this" data-index="{{index}}" catchtap="tapOnListItem">{{item}}</text>
-    </view>
+    <dropSelectList selectArray="{{selectArray}}"></dropSelectList>
   </view>
   <text class="title">附注</text>
   <view class="annotationView">

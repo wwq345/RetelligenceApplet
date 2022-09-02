@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/TaskPage/taskPage",
     "pages/TaskDetailPage/taskDetailPage",
-    "pages/AssignTaskPage/assignTaskPage"
+    "pages/AssignTaskPage/assignTaskPage",
+    "Components/dropSelectList/dropSelectList"
   ],
   "window": {
     "backgroundTextStyle": "light",
