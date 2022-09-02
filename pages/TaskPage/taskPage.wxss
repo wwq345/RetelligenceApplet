@@ -1,0 +1,94 @@
+/* pages/TaskPages/taskPage.wxss */
+.taskListView {
+  display: flex;
+  flex-direction: column;
+  height: 1200rpx;
+}
+
+.noTaskBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+.noTaskBackground image{
+  margin-top: 300rpx;
+  width: 320rpx;
+  height: 300rpx;
+  align-self: center;
+}
+.noTaskBackground text {
+  margin-top: 40rpx;
+  align-self: center;
+  font-size: 40rpx;
+  font-weight: 400;
+}
+
+.taskCardView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20rpx;
+  border-style: solid;
+  border-width: 0.6rpx;
+  border-color: #89919A;
+  border-radius: 10rpx;
+}
+
+.taskCardTopView {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 30rpx;
+}
+
+.taskCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.taskPhoto {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+}
+
+.taskTitle {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.taskAssignText {
+  color: #475E75;
+}
+
+.taskCardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.uploadPictureButton {
+  background-color: rgba(91, 115, 139, 0.08);
+  color: #475E75;
+  border-radius: 10rpx;
+}
+
+.assignTaskButton {
+  background-color: white;
+  color: #188918;
+  border-style: solid;
+  border-radius: 10rpx;
+  border-width: 3rpx;
+  border-color: #188918;
+}
+
+.add {
+  margin-top: 100rpx;
+  background-color: #188918;
+  color: white;
+}

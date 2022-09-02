@@ -1,0 +1,23 @@
+<!--pages/AssignTaskPage/assignTaskPage.wxml-->
+<view class="assignTaskPage">
+  <text class="title">执行标准</text>
+  <view class="standard">
+    
+  </view>
+  <text class="title">员工</text>
+  <view class="asignee">
+    <view class="selectedTextBox" catchtap="showList">
+      <text class="selectedText">{{selectArray[index]}}</text>
+      <image class="downArrow" src="../../statics/photos/arrowDown.png"/>
+    </view>
+    <view class="selectList" style="height: {{ifShow ? '400rpx' : '0'}};">
+      <text class="selectListItem" wx:for="{{selectArray}}" wx:key="*this" data-index="{{index}}" catchtap="tapOnListItem">{{item}}</text>
+    </view>
+  </view>
+  <text class="title">附注</text>
+  <view class="annotationView">
+    <image src="../../statics/photos/dog.jpg"></image>
+    <input class="annotationInput" type="textarea" style="width: 600rpx; height: 80rpx;" name="annotationText"/>
+  </view>
+</view>
+<button class="assignButton" style="width: 600rpx;font-weight: 300;" bindtap="assignTo">分配任务</button>

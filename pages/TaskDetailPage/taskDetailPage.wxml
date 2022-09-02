@@ -1,0 +1,43 @@
+<!--pages/createTaskPage/createTaskPage.wxml-->
+<view class="createTaskView">
+  <view class="requestView">
+    <view class="requestLine">
+      <text class="requestTitle">参考图片</text>
+      <image class="examplePhoto" src="../../statics/photos/dog.jpg"/>
+    </view>
+    <view class="requestLine">
+      <text class="requestTitle">陈列高度要求</text>
+      <text class="requestContent">1.4-1.6米</text>
+    </view>
+    <view class="requestLine">
+      <text class="requestTitle">陈列道具使用要求</text>
+      <text class="requestContent">推荐使用陈列桌，不露红仓板，可用仓板围边装饰</text>
+    </view>
+    <view class="requestLine">
+      <text class="requestTitle">地堆陈列整齐度要求</text>
+      <text class="requestContent">沿主通道方向的两侧在一条直线上，同侧端架正立面形成一条直线，相邻地堆间距一致</text>
+    </view>
+    <view class="requestLine">
+      <text class="requestTitle">团购露出要求</text>
+      <text class="requestContent">必须有团购电话露出，至少有2个联系电话</text>
+    </view>
+    <view class="requestLine">
+      <text class="requestTitle">价签使用要求</text>
+      <text class="requestContent">统一使用立牌，不允许直接贴在商品上；叠篮价签必须有封套，居中放置</text>
+    </view>
+  </view>
+  <view class="uploadPhotoView">
+    <text class="title">Upload photos</text>
+    <button class="uploadPictureButton" style="width: 150rpx;height: 150rpx;">
+      <image src="../../statics/photos/dog.jpg"/>
+    </button>
+  </view>
+    <text class="title">Annotation</text>
+  <view class="annotationView">
+    <image src="../../statics/photos/dog.jpg"></image>
+    <input class="annotationInput" type="textarea" style="width: 600rpx; height: 80rpx;" name="annotationText"/>
+  </view>
+  <view>
+    <button class="finished" bindtap="finishClick" style="width: 600rpx;font-weight: 300;">完成</button>
+  </view>
+</view>

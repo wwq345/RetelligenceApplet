@@ -1,0 +1,97 @@
+/* pages/createTaskPage/createTaskPage.wxss */
+.createTaskView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20rpx;
+}
+
+.requestView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30rpx;
+}
+
+.requestLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20rpx;
+}
+
+.examplePhoto {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.requestTitle {
+  width: 40%;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: rgba(71, 94, 117, 0.9);
+}
+
+.requestContent {
+  width: 60%;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: rgba(34, 53, 72, 1);
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+}
+
+.uploadPhotoView .uploadPictureButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-style: dashed;
+  border-color: rgba(137, 145, 154, 0.7);
+  background-color: white;
+  border-radius: 10rpx;
+  border-width: 1rpx;
+}
+
+.uploadPhotoView .uploadPictureButton image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.uploadPhotoView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+
+.annotationView {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.annotationView image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.annotationInput {
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: rgba(91, 115, 139, 0.83);
+  border-radius: 15rpx;
+}
+
+.finished {
+  margin-top: 100rpx;
+  background-color: #188918;
+  color: white;
+}

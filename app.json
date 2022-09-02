@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/TaskPage/taskPage",
+    "pages/TaskDetailPage/taskDetailPage",
+    "pages/AssignTaskPage/assignTaskPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#188918"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
