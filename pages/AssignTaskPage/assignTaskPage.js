@@ -128,14 +128,12 @@ Page({
   },
 
   bindChange: function(e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       standardIndex: e.detail.value
     })
   },
 
   bindColumnChange: function(e) {
-    console.log('修改的列为', e.detail.column, '，值为', e.detail.value);
     var objectArray = this.data.objectArray,
     standardArray = this.data.standardArray,
     standardIndex = this.data.standardIndex;
