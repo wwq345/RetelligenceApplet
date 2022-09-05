@@ -4,7 +4,6 @@ Page({
   /**
    * Page initial data
    */
-   
   data: {
     selectArray: ["百货处洗化课李小华","百货处洗化课李小凤","百货处洗化课李小w","百货处洗化课李小e","百货处洗化课李小z"],
     ifShow: false,
@@ -125,6 +124,38 @@ Page({
       data.standardArray[2].push(data.objectArray[data.standardIndex[0]].place[data.standardIndex[1]].type[k].name);
     }
     this.setData(data);
+  },
+
+  indexChanged: function(e) {
+    this.setData({
+      index: e.detail.index
+    })
+  },
+
+  assignTo: function() {
+    let index = this.data.index
+    let selectArray = this.data.selectArray
+    let returnIndex = 0
+    wx.getStorage({
+      key: 'itemToAssign',
+      success(res){
+        returnIndex = res.data.index - 1
+        console.log(returnIndex)
+        console.log(index)
+        var pages = getCurrentPages()
+        var prePages = pages[pages.length - 2]
+        let assignee = "taskArray[" + returnIndex + "].assignee";
+        prePages.setData({
+           [assignee] : selectArray[index]
+        })
+      },
+      fail(){
+        console.log("fail")
+      }
+    })
+    wx.navigateBack({
+      delta: 1,
+    })
   },
 
   bindChange: function(e) {

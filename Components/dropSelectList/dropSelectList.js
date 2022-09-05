@@ -29,7 +29,7 @@ Component({
         index: Index,
         ifShow: !this.data.ifShow
       });
-      this.triggerEvent("indexChange",Index);
+      this.triggerEvent("indexChange",{index: Index});
     }
   }
 })

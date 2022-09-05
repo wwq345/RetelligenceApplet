@@ -7,21 +7,21 @@
     </view>
   </block>
   <block wx:else>
-    <view class="taskCardView" wx:for="{{taskArray}}" wx:key="*this">
+    <view class="taskCardView" wx:for="{{taskArray}}" wx:key="index">
       <view class="taskCardTopView" bindtap="showDetail">
         <image class="taskPhoto"src="../../statics/photos/dog.jpg"></image>
         <view class="taskCardText">
-          <text class="taskTitle">Task {{item}} Title</text>
-          <text class="taskAssignText">From Siren</text>
+          <text class="taskTitle">Task {{item.index}} Title</text>
+          <text class="taskAssignText">{{item.assignee}}</text>
         </view>
       </view>
       <view class="taskCardBottom">
-        <button class="uploadPictureButton" style="width: 300rpx;font-weight: 300;">Upload</button>
-        <button class="assignTaskButton" style="width: 300rpx;font-weight: 300;" bindtap="navToAssignPage">Assign To</button>
+        <button class="uploadPictureButton" style="width: 300rpx;font-weight: 600;">Upload</button>
+        <button class="assignTaskButton" style="width: 300rpx;font-weight: 600;" data-item="{{item}}" bindtap="{{userType === 'admin' ? 'navToAssignPage' : 'completedTask'}}">{{userType === 'admin' ? 'Assign To' : 'Completed'}}</button>
       </view>
     </view>
   </block>
 </scroll-view>
 <view>
-  <button class="add" style="width: 600rpx;font-weight: 300;" bindtap="onClick">上传任务</button>
+  <button class="add" style="width: 600rpx;font-weight: 300;" bindtap="onClick">{{userType === "admin" ? '创建任务' : '上传任务'}}</button>
 </view>

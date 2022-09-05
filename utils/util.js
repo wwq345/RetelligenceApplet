@@ -9,11 +9,21 @@ const formatTime = date => {
   return `${[year, month, day].map(formatNumber).join('/')} ${[hour, minute, second].map(formatNumber).join(':')}`
 }
 
+function removeByValue(arr, val) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === val) {
+      arr.splice(i, 1);
+      break;
+    }
+  }
+}
+
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : `0${n}`
 }
 
 module.exports = {
-  formatTime
+  formatTime,
+  removeByValue
 }

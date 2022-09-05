@@ -17,6 +17,7 @@ Page({
       url: '../TaskPage/taskPage'
     })
   },
+
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({

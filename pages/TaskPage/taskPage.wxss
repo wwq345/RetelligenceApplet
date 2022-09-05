@@ -76,11 +76,13 @@
   background-color: rgba(91, 115, 139, 0.08);
   color: #475E75;
   border-radius: 10rpx;
+  font-weight: 600;
 }
 
 .assignTaskButton {
   background-color: white;
   color: #188918;
+  font-weight: 600;
   border-style: solid;
   border-radius: 10rpx;
   border-width: 3rpx;

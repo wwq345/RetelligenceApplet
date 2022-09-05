@@ -8,7 +8,7 @@
   </view>
   <text class="title">员工</text>
   <view class="asignee">
-    <dropSelectList selectArray="{{selectArray}}"></dropSelectList>
+    <dropSelectList selectArray="{{selectArray}}" bind:indexChange="indexChanged"></dropSelectList>
   </view>
   <text class="title">附注</text>
   <view class="annotationView">
