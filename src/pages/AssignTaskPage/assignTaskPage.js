@@ -140,8 +140,6 @@ Page({
       key: 'itemToAssign',
       success(res){
         returnIndex = res.data.index - 1
-        console.log(returnIndex)
-        console.log(index)
         var pages = getCurrentPages()
         var prePages = pages[pages.length - 2]
         let assignee = "taskArray[" + returnIndex + "].assignee";

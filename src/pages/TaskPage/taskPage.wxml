@@ -2,14 +2,14 @@
 <scroll-view class="taskListView" enable-flex="true" scroll-y>
   <block wx:if="{{taskEmpty}}">
     <view class="noTaskBackground">
-      <image src="../../statics/photos/noTask.png"></image>
+      <image src="../../../statics/photos/noTask.png"></image>
       <text>当前无派发任务</text>
     </view>
   </block>
   <block wx:else>
     <view class="taskCardView" wx:for="{{taskArray}}" wx:key="index">
       <view class="taskCardTopView" bindtap="showDetail">
-        <image class="taskPhoto"src="../../statics/photos/dog.jpg"></image>
+        <image class="taskPhoto"src="../../../statics/photos/dog.jpg"></image>
         <view class="taskCardText">
           <text class="taskTitle">Task {{item.index}} Title</text>
           <text class="taskAssignText">{{item.assignee}}</text>

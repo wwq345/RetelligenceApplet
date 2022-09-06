@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/TaskPage/taskPage",
-    "pages/TaskDetailPage/taskDetailPage",
-    "pages/AssignTaskPage/assignTaskPage",
-    "Components/dropSelectList/dropSelectList"
+    "src/pages/index/index",
+    "src/pages/TaskPage/taskPage",
+    "src/pages/TaskDetailPage/taskDetailPage",
+    "src/pages/AssignTaskPage/assignTaskPage",
+    "src/Components/dropSelectList/dropSelectList"
   ],
   "window": {
     "backgroundTextStyle": "light",

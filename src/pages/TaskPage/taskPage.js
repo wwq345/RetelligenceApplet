@@ -32,7 +32,6 @@ Page({
 
   navToAssignPage: function(e) {
     let item  = e.currentTarget.dataset.item
-    console.log(item)
     wx.setStorage({
       key: 'itemToAssign',
       data: item
@@ -45,7 +44,6 @@ Page({
   completedTask: function(e) {
     let item = e.currentTarget.dataset.item
     utils.removeByValue(this.data.taskArray, item)
-    console.log(this.data.taskArray)
     if (this.data.taskArray.length === 0) {
       this.data.taskEmpty = true
     }

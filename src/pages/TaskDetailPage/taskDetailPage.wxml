@@ -3,7 +3,7 @@
   <view class="requestView">
     <view class="requestLine">
       <text class="requestTitle">参考图片</text>
-      <image class="examplePhoto" src="../../statics/photos/dog.jpg"/>
+      <image class="examplePhoto" src="../../../statics/photos/dog.jpg"/>
     </view>
     <view class="requestLine">
       <text class="requestTitle">陈列高度要求</text>
@@ -29,12 +29,12 @@
   <view class="uploadPhotoView">
     <text class="title">Upload photos</text>
     <button class="uploadPictureButton" style="width: 150rpx;height: 150rpx;">
-      <image src="../../statics/photos/dog.jpg"/>
+      <image src="../../../statics/photos/dog.jpg"/>
     </button>
   </view>
     <text class="title">Annotation</text>
   <view class="annotationView">
-    <image src="../../statics/photos/dog.jpg"></image>
+    <image src="../../../statics/photos/dog.jpg"></image>
     <input class="annotationInput" type="textarea" style="width: 600rpx; height: 80rpx;" name="annotationText"/>
   </view>
   <view>

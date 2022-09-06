@@ -12,7 +12,7 @@
   </view>
   <text class="title">附注</text>
   <view class="annotationView">
-    <image src="../../statics/photos/dog.jpg"></image>
+    <image src="../../../statics/photos/dog.jpg"></image>
     <input class="annotationInput" type="textarea" style="width: 600rpx; height: 80rpx;" name="annotationText"/>
   </view>
 </view>
